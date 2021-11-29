@@ -1,0 +1,760 @@
+:root {
+    --primary-color: #18191a;
+    --secondary-color: #242526;
+    --text-clor: #e4e6eb;
+    --blue: #2e89ff;
+    --noti: #e41e3f;
+    --light-dark: #3a3b3c;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+.navBar {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.left-logo img {
+    width: 78px;
+    position: relative;
+    top: 2px;
+}
+
+.left-navInput input {
+    background: var(--light-dark);
+    border: 1px solid var(--light-dark);
+    border-radius: 25px;
+    height: 40px;
+    width: 264px;
+    padding: 3px 10px 3px 45px;
+    color: var(--text-clor);
+    margin-left: -10px;
+}
+
+.left-navInput input::placeholder {
+    color: #a4a7ac;
+}
+
+.left-navInput input:focus-visible {
+    outline: 0;
+}
+
+.left-navInput i {
+    font-size: 21px;
+    color: #a4a7ac;
+    position: absolute;
+    top: 17px;
+    left: 84px;
+}
+
+.center {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 57px;
+    justify-content: center;
+}
+
+.centerIcon {
+    padding: 6px 0px;
+}
+
+.navBar span {
+    position: relative;
+    color: var(--text-clor);
+    background-color: var(--noti);
+    border-radius: 8px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    top: 9px;
+    left: 66px;
+}
+
+.centerIcon .span2 {
+    left: 65px;
+    width: 19px;
+}
+
+.centerIcon .span3 {
+    left: 67px !important;
+}
+
+.icon {
+    fill: #b0b3b8;
+    width: 122px;
+    height: 25px;
+}
+
+.expicon {
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 8px;
+    padding-top: 20px;
+}
+
+.expicon:hover {
+    background-color: var(--secondary-color) !important;
+    border-radius: 0px !important;
+}
+
+.centerIcon:hover {
+    border-radius: 10px;
+    background-color: var(--light-dark);
+}
+
+.icon1 {
+    fill: var(--blue);
+}
+
+.right {
+    padding-right: 9px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profileImg {
+    display: flex;
+    align-items: center;
+    width: 88px !important;
+    height: 36px !important;
+    border-radius: 50px !important;
+}
+
+.profileImg img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.profileImg p {
+    color: var(--text-clor);
+    margin-left: 7px;
+    font-weight: 400;
+    padding-bottom: 7px;
+    padding-right: 10px;
+}
+
+.rightIcon {
+    background-color: #3a3b3c;
+    fill: var(--text-clor);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noti svg {
+    transform: translate(-8px, 1px);
+}
+
+.noti span {
+    left: 26px !important;
+    top: -9px !important;
+}
+
+.span3 {
+    left: 1233px !important;
+    width: 19px !important;
+}
+
+.secondSection {
+    display: flex;
+}
+
+.menu {
+    width: 25%;
+    color: var(--text-clor);
+    padding: 16px 16px;
+    height: 92vh;
+    overflow-y: scroll;
+}
+
+.menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: #5d616600;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.menu:hover::-webkit-scrollbar-thumb {
+    background-color: #5d6166;
+}
+
+.menuDiv {
+    display: flex;
+    align-items: center;
+    width: 288px;
+    height: 52px;
+}
+
+.menuDiv:hover {
+    background-color: #3a3b3c;
+    border-radius: 10px;
+}
+
+.menuDiv h3 {
+    font-size: 15px;
+    padding-left: 17px;
+}
+
+.menuDiv img {
+    width: 36px;
+    height: 36px;
+}
+
+.menu-profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.menu-seeMore-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--light-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-seeMore-icon svg {
+    fill: var(--text-clor);
+}
+
+.menuShortcutsSpan {
+    color: #b0b3b8;
+    padding: 15px 0px;
+    font-size: 19px;
+    display: block;
+}
+
+.shortcut img {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+}
+
+.menu-links ul {
+    display: flex;
+    padding-left: 0;
+    line-height: 20px;
+    color: #b0b3b8;
+    flex-flow: row wrap;
+    margin-bottom: 0px;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.menu-links ul li {
+    margin-right: 4px;
+}
+
+.newsFeed {
+    width: 50%;
+    padding: 21px 40px 0 43px;
+    height: 92vh;
+    overflow-y: scroll;
+}
+
+.myDaySection {
+    color: var(--text-clor);
+    display: flex;
+    justify-content: space-between;
+}
+
+.ownerMyDay {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.ownerMyDay img {
+    width: 112px !important;
+    height: 150px !important;
+    border-radius: 14px 14px 0 0 !important;
+    border: 0px !important;
+}
+
+.myDay {
+    width: 112px;
+}
+
+.myDayIcon {
+    width: 32px;
+    display: flex;
+    height: 32px;
+    background: var(--blue);
+    border-radius: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242526;
+    margin-top: -17px;
+}
+
+.myDayIcon i {
+    font-size: 20px;
+}
+
+.createStory span {
+    margin: 3px 0px 11px 0;
+    font-size: 15px;
+    display: block;
+}
+
+.createStory {
+    width: 112px;
+    background: var(--secondary-color);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.s1,
+.s2,
+.s3,
+.lastMyDay {
+    width: 112px;
+    height: 199px;
+}
+
+.s1 {
+    background: url("./images/myday1.jpg");
+    filter: blur(1.4px);
+    border-radius: 11px;
+    background-repeat: no-repeat;
+}
+
+.s2 {
+    background: url("./images/myday2.jpg");
+    filter: blur(1.4px);
+    border-radius: 11px;
+    background-repeat: no-repeat;
+}
+
+.s3 {
+    background: url("./images/myday3.jpg");
+    filter: blur(1.4px);
+    border-radius: 11px;
+    background-repeat: no-repeat;
+}
+
+.lastMyDay {
+    background: url("./images/myday4.jpg");
+    filter: blur(1.4px);
+    border-radius: 11px;
+    background-repeat: no-repeat;
+}
+
+.s1,
+.s2,
+.s3,
+.lastMyDay {
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.s1:hover {
+    background-size: 120px;
+}
+
+.s2:hover {
+    background-size: 120px;
+}
+
+.s3:hover {
+    background-size: 428px;
+}
+
+.lastMyDay:hover {
+    background-size: 196px;
+}
+
+.myDay {
+    width: 112px;
+    height: 199px;
+}
+
+.s1+img {
+    position: relative;
+    bottom: 188px;
+    left: 15px;
+}
+
+.s2+img {
+    position: relative;
+    bottom: 188px;
+    left: 15px;
+}
+
+.s3+img {
+    position: relative;
+    bottom: 188px;
+    left: 15px;
+}
+
+.lastMyDay+img {
+    position: relative;
+    bottom: 188px;
+    left: 15px;
+}
+
+.myDay img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid var(--blue);
+}
+
+.myDay p {
+    position: relative;
+    bottom: 89px;
+    left: 16px;
+    font-size: 15px;
+}
+
+.placeToPost {
+    height: 123px;
+    display: flex;
+    padding: 12px 16px 10px 16px;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background: var(--secondary-color);
+    border-radius: 15px;
+    margin: 24px 0;
+}
+
+.inputToPost {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #3E4042;
+    padding-bottom: 14px;
+}
+
+.inputToPost img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.inputToPost input {
+    width: 508px;
+    height: 40px;
+    background: var(--light-dark);
+    border: 0;
+    border-radius: 17px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.inputToPost input:hover {
+    background-color: #454647;
+}
+
+.opt1 svg {
+    fill: #f3425f;
+}
+
+.opt2 svg {
+    fill: #45bd62;
+}
+
+.opt3 svg {
+    fill: #f7b928;
+}
+
+.optionsToChoose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    width: 186px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b0b8b3;
+    padding: 8px 5px;
+    margin-top: 0px;
+    border-radius: 10px;
+    width: 186px;
+    cursor: pointer
+}
+
+.option:hover {
+    background-color: var(--light-dark);
+}
+
+s .option svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 9px;
+}
+
+.otherPeople {
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.otherPeople img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.createRoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background: var(--secondary-color);
+    border-radius: 10PX;
+}
+
+.roomIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 40px;
+    border-radius: 24px;
+    padding: 12px;
+    border: 2px solid #2d88ff33;
+    margin: 0 23px;
+}
+
+.roomIcon img {
+    width: 24px;
+    height: 24px;
+}
+
+.roomIcon span {
+    font-size: 15px;
+    color: var(--blue);
+}
+
+.postOwnerImg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.postOwnerImg {
+    margin: 0 10px;
+}
+
+.postOwnerNameMinute span {
+    font-size: 15px;
+    color: var(--text-clor);
+}
+
+.postOwnerNameMinute {
+    width: 474px;
+}
+
+.min span,
+i {
+    font-size: 13px;
+    color: #b0b3b8;
+}
+
+.menuOfPost i {
+    margin: 0 20px;
+}
+
+.postUpperSection {
+    display: flex;
+    align-items: center;
+    width: 590px;
+    height: 48px;
+}
+
+.postMiddleSection img {
+    width: 100%;
+    height: 495px;
+}
+
+.reacticon img {
+    width: 18px;
+    height: 18px;
+    margin: 0 -2px;
+}
+
+.reacticon span,
+.shareNumber {
+    color: #b0b3b8;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.shareNumber {
+    word-spacing: 3px;
+}
+
+.last-upperSec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 14px;
+    border-bottom: 1px solid #3E4042;
+}
+
+.last-divs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.postBtn {
+    width: 183px;
+    height: 32px;
+    text-align: center;
+    font-size: 15px;
+    color: #b0b3b8;
+    border-radius: 10px;
+}
+
+.postBtn:hover {
+    background-color: var(--light-dark);
+}
+
+.postBtn i {
+    margin: 0 5px;
+}
+
+.otherPosts {
+    border-radius: 10px;
+    background: var(--secondary-color);
+    margin: 19px 0;
+    padding: 8px 0;
+}
+
+.newsFeed::-webkit-scrollbar {
+    width: 1px;
+}
+
+.newsFeed::-webkit-scrollbar-thumb {
+    background-color: #5d616600;
+}
+
+.contact {
+    width: 25%;
+    padding: 21px 10px;
+    height: 92vh;
+    overflow-y: scroll;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    color: var(--text-clor);
+    font-size: 17px;
+}
+
+.heading span {
+    width: 152px;
+    padding-left: 17px;
+}
+
+.heading i {
+    width: 32px;
+    height: 32px;
+}
+
+.list {
+    color: var(--text-clor);
+    font-size: 17px;
+}
+
+.list ul {
+    margin-top: 0;
+    padding-left: 14px;
+}
+
+.list li {
+    list-style: none;
+}
+
+.contactList {
+    letter-spacing: 1px;
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+    margin: 15px 5px 10px 7px;
+}
+
+.contactList img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: 0 8px;
+}
+
+.contact::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contact::-webkit-scrollbar-thumb {
+    background-color: #5d616600;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.contact:hover::-webkit-scrollbar-thumb {
+    background-color: #5d6166;
+}
+
+.messageBox {
+    bottom: 31px;
+    right: 64px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: var(--light-dark);
+}
+
+.messageBox i {
+    width: 20px;
+    height: 20px;
+    font-size: 19px;
+    bottom: 21px;
+    right: 46px;
+}

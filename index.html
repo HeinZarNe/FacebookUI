@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./feather-icons-web/feather.css">
+</head>
+<!-- Welcome to my source code. I hope you get some knowledeg. Let me kow if I have bug or error to fix. -->
+
+<body>
+    <!-- This is Navbar -->
+    <div class="navBar">
+        <!-- left side of navbar -->
+        <div class="left">
+            <div class="left-logo">
+                <img src="./images/Facebook-logo.png" alt="">
+            </div>
+            <div class="left-navInput">
+                <i class="feather-search"></i>
+                <input type="text" name="search" placeholder="Search Facebook">
+            </div>
+        </div>
+        <!-- center of navbar -->
+        <div class="center">
+            <div class="expicon centerIcon ">
+                <svg viewBox="0 0 28 28" class="icon1 icon" height="28" width="28"><path d="M25.825 12.29C25.824 12.289 25.823 12.288 25.821 12.286L15.027 2.937C14.752 2.675 14.392 2.527 13.989 2.521 13.608 2.527 13.248 2.675 13.001 2.912L2.175 12.29C1.756 12.658 1.629 13.245 1.868 13.759 2.079 14.215 2.567 14.479 3.069 14.479L5 14.479 5 23.729C5 24.695 5.784 25.479 6.75 25.479L11 25.479C11.552 25.479 12 25.031 12 24.479L12 18.309C12 18.126 12.148 17.979 12.33 17.979L15.67 17.979C15.852 17.979 16 18.126 16 18.309L16 24.479C16 25.031 16.448 25.479 17 25.479L21.25 25.479C22.217 25.479 23 24.695 23 23.729L23 14.479 24.931 14.479C25.433 14.479 25.921 14.215 26.132 13.759 26.371 13.245 26.244 12.658 25.825 12.29"></path></svg>
+            </div>
+            <div class="centerIcon">
+                <span>9+</span>
+                <svg viewBox="0 0 28 28" class="icon" height="28" width="28"><path d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.163 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.163 11.654C17.612 11.924 17.612 12.575 17.163 12.846ZM21.75 20.25C22.992 20.25 24 19.242 24 18L24 6.5C24 5.258 22.992 4.25 21.75 4.25L6.25 4.25C5.008 4.25 4 5.258 4 6.5L4 18C4 19.242 5.008 20.25 6.25 20.25L21.75 20.25ZM21.75 21.75 6.25 21.75C4.179 21.75 2.5 20.071 2.5 18L2.5 6.5C2.5 4.429 4.179 2.75 6.25 2.75L21.75 2.75C23.821 2.75 25.5 4.429 25.5 6.5L25.5 18C25.5 20.071 23.821 21.75 21.75 21.75Z"></path></svg>
+            </div>
+
+            <div class="centerIcon">
+                <span class="span2">2</span>
+                <svg viewBox="0 0 28 28" class="icon" height="28" width="28"><path d="M25.5 14C25.5 7.649 20.351 2.5 14 2.5 7.649 2.5 2.5 7.649 2.5 14 2.5 20.351 7.649 25.5 14 25.5 20.351 25.5 25.5 20.351 25.5 14ZM27 14C27 21.18 21.18 27 14 27 6.82 27 1 21.18 1 14 1 6.82 6.82 1 14 1 21.18 1 27 6.82 27 14ZM7.479 14 7.631 14C7.933 14 8.102 14.338 7.934 14.591 7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.99 18.461 7.004 18.578 7.03 18.802 6.862 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14ZM20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.878 19L21.364 19C21.139 19 20.97 18.802 20.997 18.578 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.067 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14ZM8.25 13C7.147 13 6.25 11.991 6.25 10.75 6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13ZM19.75 13C18.647 13 17.75 11.991 17.75 10.75 17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13ZM15.172 13.5C17.558 13.5 19.5 15.395 19.5 17.724L19.5 18.221C19.5 19.202 18.683 20 17.677 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.441 13.5 12.828 13.5L15.172 13.5ZM16.75 9C16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6 15.697 6 16.75 7.15 16.75 9Z"></path></svg>
+            </div>
+            <div class="centerIcon">
+                <span class="span3">9+</span>
+                <svg viewBox="0 0 28 28" class="icon" height="28" width="28"><path d="M23.5 9.5H10.25a.75.75 0 00-.75.75v7c0 .414.336.75.75.75H17v5.5H4.5v-19h19v5zm0 14h-5v-6.25a.75.75 0 00-.75-.75H11V11h12.5v12.5zm1.5.25V4.25C25 3.561 24.439 3 23.75 3H4.25C3.561 3 3 3.561 3 4.25v19.5c0 .689.561 1.25 1.25 1.25h19.5c.689 0 1.25-.561 1.25-1.25z"></path></svg>
+            </div>
+        </div>
+        <!-- right side of navbar -->
+        <div class="right">
+            <div class="profileImg rightIcon">
+                <img src="./images/pf.jpg" alt="">
+                <p>Hein</p>
+            </div>
+            <div class="rightIcon">
+                <svg viewBox="0 0 44 44" width="1em" height="1em" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry jnigpg78 odw8uiq3"><circle cx="7" cy="7" r="6"></circle><circle cx="22" cy="7" r="6"></circle><circle cx="37" cy="7" r="6"></circle><circle cx="7" cy="22" r="6"></circle><circle cx="22" cy="22" r="6"></circle><circle cx="37" cy="22" r="6"></circle><circle cx="7" cy="37" r="6"></circle><circle cx="22" cy="37" r="6"></circle><circle cx="37" cy="37" r="6"></circle></svg>
+            </div>
+            <div class="rightIcon">
+                <svg viewBox="0 0 28 28" alt="" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg>
+            </div>
+            <div class="rightIcon noti">
+                <span class="span3">3</span>
+                <svg viewBox="0 0 28 28" alt="" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
+            </div>
+            <div class="rightIcon">
+                <svg viewBox="0 0 20 20" width="1em" height="1em" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry jnigpg78 odw8uiq3"><path d="M10 14a1 1 0 0 1-.755-.349L5.329 9.182a1.367 1.367 0 0 1-.205-1.46A1.184 1.184 0 0 1 6.2 7h7.6a1.18 1.18 0 0 1 1.074.721 1.357 1.357 0 0 1-.2 1.457l-3.918 4.473A1 1 0 0 1 10 14z"></path></svg>
+            </div>
+        </div>
+    </div>
+    <div class="secondSection">
+        <div class="menu">
+            <div class="menuDiv menu-profile">
+                <span><img src="./images/pf.jpg" alt=""></span>
+                <h3>Hein Zar Ne</h3>
+            </div>
+            <div class="menuDiv">
+                <span>
+                    <img src="./images/firends-icon.png" alt="">
+                </span>
+                <h3>Friends</h3>
+            </div>
+            <div class="menuDiv">
+                <span>
+                    <img src="./images/saved-icon.png" alt="">
+                </span>
+                <h3>Saved</h3>
+            </div>
+            <div class="menuDiv">
+                <span>
+                    <img src="./images/groups-icon.png" alt="">
+                </span>
+                <h3>Groups</h3>
+            </div>
+            <div class="menuDiv">
+                <span>
+                    <img src="./images/watch-icon.png" alt="">
+                </span>
+                <h3>Watchs</h3>
+            </div>
+            <div class="menuDiv">
+                <span>
+                    <img src="./images/memories-icon.png" alt="">
+                </span>
+                <h3>Memories</h3>
+            </div>
+            <div class="menuDiv seeMore">
+                <span class="menu-seeMore-icon">
+                    <svg viewBox="0 0 16 16" width="1em" height="1em" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 fzdkajry jnigpg78 odw8uiq3"><g fill-rule="evenodd" transform="translate(-448 -544)"><path fill-rule="nonzero" d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z"></path></g></svg>
+                </span>
+                <h3>See more</h3>
+            </div>
+            <hr style="border: 0.7px solid #3e4042;">
+            <span class="menuShortcutsSpan">Your Shortcuts</span>
+            <div class="menuDiv shortcut">
+                <img src="./images/group-photo1.jpg" alt="">
+                <h3>MMS IT SWD</h3>
+            </div>
+            <div class="menuDiv shortcut">
+                <img src="./images/group-photo2.png" alt="">
+                <h3>New BWD 3</h3>
+            </div>
+            <div class="menuDiv shortcut">
+                <img src="./images/group-photo3.jpg" alt="">
+                <h3>MMS IT Laravel</h3>
+            </div>
+            <div class="menuDiv shortcut">
+                <img src="./images/group-photo4.jpg" alt="">
+                <h3>Self Study (Free Group)📖</h3>
+            </div>
+            <div class="menuDiv shortcut">
+                <img src="./images/group-photo5.jpg" alt="">
+                <h3>Hunter X Hunter By MK</h3>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li>Privacy</li>
+                    <li>·</li>
+                    <li>Terms</li>
+                    <li>·</li>
+                    <li>Advertising</li>
+                    <li>·</li>
+                    <li>Ad Choices</li>
+                    <li>·</li>
+                    <li>Cookies</li>
+                    <li>·</li>
+                    <li>More</li>
+                    <li>·</li>
+                    <li>Meta © 2021</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="newsFeed">
+            <div class="myDaySection">
+                <div class="ownerMyDay myDay">
+                    <img src="./images/pf.jpg" alt="">
+                    <div class="createStory">
+                        <div class="myDayIcon">
+                            <i class="feather-plus"></i>
+                        </div>
+                        <span>Create Story</span>
+                    </div>
+                </div>
+
+                <div class="myDay">
+                    <div class="s1"></div>
+                    <img src="./images/pf.jpg" alt="">
+                    <p>Your Story</p>
+                </div>
+
+                <div class="myDay">
+                    <div class="s2"></div>
+                    <img src="./images/mydaypf1.jpg" alt="">
+                    <p>Gi Gi</p>
+                </div>
+
+                <div class="myDay">
+                    <div class="s3"></div>
+                    <img src="./images/mydaypf2.jpg" alt="">
+                    <p>Ri Ni</p>
+                </div>
+
+                <div class="myDay">
+                    <div class="lastMyDay"></div>
+
+                    <img src="./images/mydaypf3.jpg" alt="">
+                    <p>Rui</p>
+
+                </div>
+            </div>
+            <div class="placeToPost">
+                <div class="inputToPost">
+                    <img src="./images/pf.jpg" alt="">
+                    <input type="text" placeholder="What's on your mind, Hein?" name="" id="">
+                </div>
+                <div class="optionsToChoose">
+                    <div class="option opt1">
+                        <svg viewBox="0 0 24 24" width="1em" height="1em" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 i2fa72qc rgmg9uty b73ngqbp"><g fill-rule="evenodd" transform="translate(-444 -156)"><g><path d="M113.029 2.514c-.363-.088-.746.014-1.048.234l-2.57 1.88a.999.999 0 0 0-.411.807v8.13a1 1 0 0 0 .41.808l2.602 1.901c.219.16.477.242.737.242.253 0 .508-.077.732-.235.34-.239.519-.65.519-1.065V3.735a1.25 1.25 0 0 0-.971-1.22m-20.15 6.563c.1-.146 2.475-3.578 5.87-3.578 3.396 0 5.771 3.432 5.87 3.578a.749.749 0 0 1 0 .844c-.099.146-2.474 3.578-5.87 3.578-3.395 0-5.77-3.432-5.87-3.578a.749.749 0 0 1 0-.844zM103.75 19a3.754 3.754 0 0 0 3.75-3.75V3.75A3.754 3.754 0 0 0 103.75 0h-10A3.754 3.754 0 0 0 90 3.75v11.5A3.754 3.754 0 0 0 93.75 19h10z" transform="translate(354 158.5)"></path><path d="M98.75 12c1.379 0 2.5-1.121 2.5-2.5S100.129 7 98.75 7a2.503 2.503 0 0 0-2.5 2.5c0 1.379 1.121 2.5 2.5 2.5" transform="translate(354 158.5)"></path></g></g></svg>
+                        <span>Live Video</span>
+                    </div>
+                    <div class="option opt2">
+                        <svg viewBox="0 0 24 24" width="1em" height="1em" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 n90h9ftp rgmg9uty b73ngqbp"><g fill-rule="evenodd" transform="translate(-444 -156)"><g><path d="m96.968 22.425-.648.057a2.692 2.692 0 0 1-1.978-.625 2.69 2.69 0 0 1-.96-1.84L92.01 4.32a2.702 2.702 0 0 1 .79-2.156c.47-.472 1.111-.731 1.774-.79l2.58-.225a.498.498 0 0 1 .507.675 4.189 4.189 0 0 0-.251 1.11L96.017 18.85a4.206 4.206 0 0 0 .977 3.091s.459.364-.026.485m8.524-16.327a1.75 1.75 0 1 1-3.485.305 1.75 1.75 0 0 1 3.485-.305m5.85 3.011a.797.797 0 0 0-1.129-.093l-3.733 3.195a.545.545 0 0 0-.062.765l.837.993a.75.75 0 1 1-1.147.966l-2.502-2.981a.797.797 0 0 0-1.096-.12L99 14.5l-.5 4.25c-.06.674.326 2.19 1 2.25l11.916 1.166c.325.026 1-.039 1.25-.25.252-.21.89-.842.917-1.166l.833-8.084-3.073-3.557z" transform="translate(352 156.5)"></path><path fill-rule="nonzero" d="m111.61 22.963-11.604-1.015a2.77 2.77 0 0 1-2.512-2.995L98.88 3.09A2.77 2.77 0 0 1 101.876.58l11.603 1.015a2.77 2.77 0 0 1 2.513 2.994l-1.388 15.862a2.77 2.77 0 0 1-2.994 2.513zm.13-1.494.082.004a1.27 1.27 0 0 0 1.287-1.154l1.388-15.862a1.27 1.27 0 0 0-1.148-1.37l-11.604-1.014a1.27 1.27 0 0 0-1.37 1.15l-1.387 15.86a1.27 1.27 0 0 0 1.149 1.37l11.603 1.016z" transform="translate(352 156.5)"></path></g></g></svg>
+                        <span>Photo/video</span>
+                    </div>
+                    <div class="option opt3">
+                        <svg viewBox="0 0 24 24" width="1em" height="1em" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 ky11obwa rgmg9uty b73ngqbp"><g fill-rule="evenodd" transform="translate(-444 -156)"><g><path d="M107.285 13c.49 0 .841.476.712.957-.623 2.324-2.837 4.043-5.473 4.043-2.636 0-4.85-1.719-5.473-4.043-.13-.48.222-.957.712-.957h9.522z" transform="translate(353.5 156.5)"></path><path fill-rule="nonzero" d="M114.024 11.5c0 6.351-5.149 11.5-11.5 11.5s-11.5-5.149-11.5-11.5S96.173 0 102.524 0s11.5 5.149 11.5 11.5zm-2 0a9.5 9.5 0 1 0-19 0 9.5 9.5 0 0 0 19 0z" transform="translate(353.5 156.5)"></path><path d="M99.524 8.5c0 .829-.56 1.5-1.25 1.5s-1.25-.671-1.25-1.5.56-1.5 1.25-1.5 1.25.671 1.25 1.5m8.5 0c0 .829-.56 1.5-1.25 1.5s-1.25-.671-1.25-1.5.56-1.5 1.25-1.5 1.25.671 1.25 1.5m-.739 4.5h-9.522c-.49 0-.841.476-.712.957.623 2.324 2.837 4.043 5.473 4.043 2.636 0 4.85-1.719 5.473-4.043.13-.48-.222-.957-.712-.957m-2.165 2c-.667.624-1.592 1-2.596 1a3.799 3.799 0 0 1-2.596-1h5.192" transform="translate(353.5 156.5)"></path></g></g></svg>
+                        <span>Feeling/activity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="createRoom">
+                <div class="roomIcon">
+                    <img src="./images/roomicon.png" alt="">
+                    <span>Create room</span>
+                </div>
+                <div class="otherPeople">
+                    <img src="http://placeimg.com/640/480/business">
+                    <img src="http://placeimg.com/640/480/technics">
+                    <img src="http://placeimg.com/640/480/fashion">
+                    <img src="http://placeimg.com/640/480/people">
+                    <img src="http://placeimg.com/640/480/nature">
+                    <img src="http://placeimg.com/640/480/abstract">
+                    <img src="http://placeimg.com/640/480/people" alt="">
+                    <img src="http://placeimg.com/640/480/nightlife" alt="">
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/animals" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Lucas Huels</span>
+                        <div class="min">
+                            <span>24m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/business" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">33</span>
+                        </div>
+                        <span class="shareNumber">12 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/people" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Herbert Ziemann</span>
+                        <div class="min">
+                            <span>1h.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/fashion" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">50</span>
+                        </div>
+                        <span class="shareNumber">34 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/cats" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Nichole Torphy</span>
+                        <div class="min">
+                            <span>46m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/sports" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">53</span>
+                        </div>
+                        <span class="shareNumber">3 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Jaime Schinner</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/technics" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/abstract" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Brent Grady I</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/nightlife" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="otherPosts">
+                <div class="postUpperSection">
+                    <div class="postOwnerImg">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                    </div>
+                    <div class="postOwnerNameMinute">
+                        <span>Mrs. Denise Swift</span>
+                        <div class="min">
+                            <span>26m.</span>
+                            <i class="feather-globe"></i>
+                        </div>
+                    </div>
+                    <div class="menuOfPost">
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                <div class="postMiddleSection">
+                    <img src="http://placeimg.com/640/480/city" alt="">
+                </div>
+
+                <div class="postLastSection">
+                    <div class="last-upperSec">
+                        <div class="reacticon">
+                            <img src="./images/hAHAREACT.svg" alt="">
+                            <img src="./images/likereact.svg" alt="">
+                            <span class="reactNumber">69</span>
+                        </div>
+                        <span class="shareNumber">17 <span>Shares</span></span>
+                    </div>
+                    <div class="last-divs">
+                        <div class="postBtn">
+                            <span class="like"><i class="feather-thumbs-up"></i>Like</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="comment"><i class="far fa-comment-alt"></i>Comment</span>
+                        </div>
+                        <div class="postBtn">
+                            <span class="share"><i class="fas fa-share"></i>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact">
+            <div class="heading">
+                <span>Contacts</span>
+                <i class="feather-video"></i>
+                <i class="feather-search"></i>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/technics" alt="">
+                        <span>Sammy Olson</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/transport" alt="">
+                        <span>Leonard Langworth</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/technics" alt="">
+                        <span>Gordon Lindgren</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                        <span>Ollie Sipes I</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/nature" alt="">
+                        <span>Domingo Runte</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/people" alt="">
+                        <span>Isabel Fahey</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/cats" alt="">
+                        <span>Stacy Herman</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/fashion" alt="">
+                        <span>Katie Moen</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/food" alt="">
+                        <span>Tamara Jast</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/abstract" alt="">
+                        <span>Peggy Haley</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/fashion" alt="">
+                        <span>Jose Langworth</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/business" alt="">
+                        <span>Lorene Heidenreich</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/business" alt="">
+                        <span>Pam O'Connell</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/abstract" alt="">
+                        <span>Sonya Borer</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/animals" alt="">
+                        <span>Orville Kreiger</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/fashion" alt="">
+                        <span>Craig Greenfelder</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/fashion" alt="">
+                        <span>Pete Armstrong</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/sports" alt="">
+                        <span>Gerald Dare</span>
+                    </li>
+                    <li class="contactList">
+                        <img src="http://placeimg.com/640/480/nightlife" alt="">
+                        <span>Blake Boyer</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="messageBox"><i class="feather-edit"></i></div>
+    </div>
+</body>
+
+</html>
