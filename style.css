@@ -165,7 +165,7 @@ body {
 }
 
 .noti svg {
-    transform: translate(-8px, 1px);
+    transform: translate( -10px, 1px);
 }
 
 .noti span {
